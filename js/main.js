@@ -11,6 +11,7 @@ $(document).ready(function(){
 				console.log("Game pressed");
 				$("#gameInfo").toggleClass('activated');
 				$("body").toggleClass("open");
+				window.location = "#games";
 				break;
 			case "about":
 				if($("#aboutInfo").siblings().hasClass("activated")) 
@@ -21,6 +22,7 @@ $(document).ready(function(){
 				console.log("About pressed");	
 				$("#aboutInfo").toggleClass('activated');
 				$("body").toggleClass("open");
+				window.location = "#about";
 				break;
 			case "contact":
 				if($("#contactInfo").siblings().hasClass("activated"))
@@ -31,6 +33,7 @@ $(document).ready(function(){
 				console.log("Contact pressed");
 				$("#contactInfo").toggleClass('activated');
 				$("body").toggleClass("open");
+				window.location = "#contact";
 				break;
 			default:
 				console.log(" defaults ");
