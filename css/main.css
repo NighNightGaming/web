@@ -44,7 +44,7 @@ nav li:hover {
 	width: 20em;
 	font-size: .75em;
 	position: absolute;
-	top: 2em;
+	padding-top: 2em;
 	text-indent: 2em;
 	opacity: 0;
 	left: 23em;
