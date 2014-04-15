@@ -1,0 +1,22 @@
+/* Bringing in the font */
+@font-face {
+  font-family: "univox";
+  src: url("../assets/univox_regular_macroman/univox-webfont.eot");
+  src: url("../assets/univox_regular_macroman/aunivox-webfont.eot?#iefix") format('embedded-opentype'), 
+    url("../assets/univox_regular_macroman/univox-webfont.woff") format('woff'), 
+    url("../assets/univox_regular_macroman/univox-webfont.ttf") format('truetype'), 
+    url("../assets/univox_regular_macroman/univox-webfont.svg#univox") format('svg'); 
+}
+
+$menuFont: "univox", sans-serif;
+$menuFontSize: 0.6em;
+$menuFontShadow: 0 0 10px grey;
+
+$contentFont: 'Gafata', sans-serif;
+$contentFontSize: .75em;
+
+$pCascade: 20%;
+
+$slideDuration: 2s;
+
+$appearDuration: 0.75s;

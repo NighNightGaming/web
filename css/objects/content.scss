@@ -1,0 +1,26 @@
+/*Specifications for content */
+.content{
+  width: 20em;
+  font-size: $contentFontSize;
+  position: absolute;
+  padding-top: 2em;
+  text-indent: 2em;
+  opacity: 0;
+  left: 23em;
+  transition-duration: $appearDuration;
+  -webkit-transition-duration: $appearDuration;
+  font-family: $contentFont;
+}
+
+p {
+  position: relative;
+  &:first-child {
+    right: $pCascade;
+  }
+  &:nth-child(3) {
+    left: $pCascade;
+  }
+  &:last-child {
+    left: $pCascade;
+  }
+}

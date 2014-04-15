@@ -1,0 +1,18 @@
+/*Specifications for menu*/
+.menu {
+  z-index: 3;
+  position: absolute;
+  top: 32.5em;
+  word-spacing: 3.5em;
+  left: -0.5em;
+
+  .menuItem {
+  font-family: $menuFont;
+  display: inline;
+  font-size: $menuFontSize;
+    &:hover {
+    text-shadow: $menuFontShadow;
+    cursor: pointer;
+    }
+  }
+}
