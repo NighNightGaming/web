@@ -4,26 +4,31 @@
   src: url("../assets/univox_regular_macroman/univox-webfont.eot");
   src: url("../assets/univox_regular_macroman/aunivox-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/univox_regular_macroman/univox-webfont.woff") format("woff"), url("../assets/univox_regular_macroman/univox-webfont.ttf") format("truetype"), url("../assets/univox_regular_macroman/univox-webfont.svg#univox") format("svg"); }
 
+/*Specification for defaults*/
 body {
   background-color: transparent;
   margin: 0px; }
-  body #mainLogo {
-    width: 23em;
-    height: 23em;
-    position: absolute; }
-  body #lineStructure {
-    height: 51em;
-    width: 70.3em;
-    position: absolute;
-    top: -17em;
-    left: -30.5em;
-    transition-duration: 2s;
-    -webkit-transition-duration: 2s; }
   body .links {
     position: relative;
     left: 10em;
     list-style-type: none; }
 
+/*Specifications for layout*/
+#mainLogo {
+  width: 23em;
+  height: 23em;
+  position: absolute; }
+
+#lineStructure {
+  height: 51em;
+  width: 70.3em;
+  position: absolute;
+  top: -17em;
+  left: -30.5em;
+  transition-duration: 2s;
+  -webkit-transition-duration: 2s; }
+
+/*Specifications for very nice web design footer*/
 footer {
   position: fixed;
   right: 1.5em;

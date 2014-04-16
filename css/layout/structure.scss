@@ -1,0 +1,16 @@
+/*Specifications for layout*/
+#mainLogo {
+  width: 23em;
+  height: 23em;
+  position: absolute;
+}
+
+#lineStructure {
+  height: 51em;
+  width: 70.3em;
+  position: absolute;
+  top: -17em;
+  left: -30.5em;
+  transition-duration: $slideDuration;
+  -webkit-transition-duration: $slideDuration;
+}
