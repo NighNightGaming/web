@@ -3,10 +3,16 @@ body {
   background-color: transparent;
   margin: 0px;
 
-  .links {
-    position: relative;
-    left: 10em;
-    list-style-type: none;
+  p {
+  position: relative;
+  &:first-child {
+    right: $pCascade;
   }
-
+  &:nth-child(3) {
+    left: $pCascade;
+  }
+  &:last-child {
+    left: $pCascade;
+  }
+}
 }

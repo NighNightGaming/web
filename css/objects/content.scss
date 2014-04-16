@@ -12,15 +12,8 @@
   font-family: $contentFont;
 }
 
-p {
-  position: relative;
-  &:first-child {
-    right: $pCascade;
-  }
-  &:nth-child(3) {
-    left: $pCascade;
-  }
-  &:last-child {
-    left: $pCascade;
-  }
+.links {
+    position: relative;
+    left: 10em;
+    list-style-type: none;
 }
