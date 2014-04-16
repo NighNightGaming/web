@@ -8,10 +8,14 @@
 body {
   background-color: transparent;
   margin: 0px; }
-  body .links {
-    position: relative;
-    left: 10em;
-    list-style-type: none; }
+  body p {
+    position: relative; }
+    body p:first-child {
+      right: 20%; }
+    body p:nth-child(3) {
+      left: 20%; }
+    body p:last-child {
+      left: 20%; }
 
 /*Specifications for layout*/
 #mainLogo {
@@ -67,14 +71,10 @@ footer {
   -webkit-transition-duration: 0.75s;
   font-family: "Gafata", sans-serif; }
 
-p {
-  position: relative; }
-  p:first-child {
-    right: 20%; }
-  p:nth-child(3) {
-    left: 20%; }
-  p:last-child {
-    left: 20%; }
+.links {
+  position: relative;
+  left: 10em;
+  list-style-type: none; }
 
 /*Classes for animations*/
 .activated {
