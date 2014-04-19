@@ -2,20 +2,30 @@
 <html>
 
 	<head>
-		<meta charset= "UTF-8">
+		<meta charset= "utf-8">
 		<title>Nigh Night</title>
 		<link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/style.css">
-		<meta property="og:image" content="http://nighnight.com/facebook/logoThumb.jpg"/> 
+		<meta property="og:image" content="http://nighnight.com/facebook/logoMed.jpg"/> 
 		<meta property="og:title" content="Nigh Night"/>
 		<meta property="og:url" content="http://nighnight.com/"/>
-
+		
 		<meta property="og:description" content="Nigh Night is a small group of energetic and offbeat developers and designers focused on helping people accomplish their goals by doing what we love: creating amazing systems that engage users and spread ideas."/> 
 		<meta property="description" content="Nigh Night is a small group of energetic and offbeat developers and designers focused on helping people accomplish their goals by doing what we love: creating amazing systems that engage users and spread ideas."/> 
 		<link rel="icon" href="assets/favicon.ico">
 	</head>
 
 	<body>
+	<!--Structured Data-->
+	<div itemscope itemtype="http://schema.org/Organization" class="hidden"> 
+   <span itemprop="name">Nigh Night</span> 
+   <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+      <span itemprop="addressLocality">Brooklyn</span>,
+      <span itemprop="addressRegion">NY</span>.
+   </div>
+  <img itemprop="logo" src="http://nighnight.com/facebook/logoMed.jpg"/>
+   <a href="http://nighnight.com" itemprop="url">http://nighnight.com</a>
+</div>
 		<!--Background-->
 			<img id="mainLogo" src = "assets/portalLogo.png" alt="collectiveLogo">
 			<img id="lineStructure" src="assets/portalLines.png" alt="lineDesign"> 
@@ -27,7 +37,6 @@
 				<li class = "menuItem" id = "about">About</li>
 			</ul>
 		</nav> 
-
 
 		<section class = "content" id = "gameInfo">
 			<p>As we continue to develop forward, this area will contain more information about projects.
