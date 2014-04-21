@@ -8,8 +8,8 @@ $(document).ready(function(){
 			body.toggleClass("open");
 		}
 		if(pane.siblings().hasClass("activated")) {
-			body.removeClass("open");
 			pane.siblings().removeClass("activated");
+			body.removeClass("open");
 			open();
 		} else {
 			open();
@@ -17,20 +17,5 @@ $(document).ready(function(){
 		console.log(buttonId , "pressed");
 	}
 	
-	$(".menu").find(".menuItem").click(function(){
-		switch(this.id) {
-			case "games":
-				slidePane("#gameInfo");
-				break;
-			case "about":
-				slidePane("#aboutInfo");
-				break;
-			case "contact":
-				slidePane("#contactInfo");
-				break;
-			default:
-				console.log(" defaults ");
-				break;
-			}
-	});
+	$(".menuItem").on('click', function() {slidePane('#' + this.id + 'Info')});
 });

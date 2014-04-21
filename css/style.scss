@@ -3,21 +3,5 @@
         "layout/layout",
         "gui/footer",
         "gui/navbar",
-        "objects/content";
-
-
-/*Classes for animations*/
-.activated {
-  transition-duration: 0.75s;
-  -webkit-transition-duration: 0.75s;
-  transition-delay: 0.75s;
-  -webkit-transition-delay: 0.75s;
-  opacity: 1;
-  left: 26em;
-  z-index: 3;
-}
-.open #lineStructure {
-  transition-duration: 2s;
-  -webkit-transition-duration: 2s;
-  left: -10.5em;
-}
+        "objects/content",
+        "states/states";
