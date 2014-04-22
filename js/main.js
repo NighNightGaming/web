@@ -3,16 +3,16 @@ $(document).ready(function(){
 	function slidePane(buttonId) {
 		var pane = $(buttonId);
 		var body = $("body");
-		function open() {
-			pane.toggleClass('activated');
-			body.toggleClass("open");
+		var isOpen = false;
+		function open(isOpen) {
+			pane.toggleClass('activated', isOpen);
+			body.toggleClass("open", isOpen);
+			isOpen = true;
 		}
-		if(pane.siblings().hasClass("activated")) {
-			pane.siblings().removeClass("activated");
-			body.removeClass("open");
-			open();
+		if(isOpen) {
+			open(isOpen);
 		} else {
-			open();
+			open(!isOpen);
 		}
 		console.log(buttonId , "pressed");
 	}
