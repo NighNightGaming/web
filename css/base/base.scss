@@ -2,7 +2,9 @@
 body {
   background-color: transparent;
   margin: 0px;
-
+  img {
+    max-width: 100%;
+  }
   p {
   position: relative;
   &:first-child {
